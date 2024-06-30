@@ -6,27 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
+    
 </head>
 
 <body>
     <div id="form-container">
         <div id="image-area">
-            <img src="assets/background-image.jpg" width="630px">
+            <div id="sign-up-heading"><img src="./assets/odin-lined.png" height="150px" alt=""><h1>Sign Up!</h1></div>
+            <!-- <img src="assets/background-image.jpg" width="630px"> -->
+            <p>Photo by <a href="https://unsplash.com/@purzlbaum?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Claudio Schwarz</a> on <a href="https://unsplash.com/photos/a-narrow-street-with-a-person-walking-down-it-n9A75XdfWCs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
         </div>
         <div id="form-area">
-            <div id="heading">
-                <h3>This is not a real service. However, this is how a sign up form should look.</h3>
-                <h3>Sign Up Now!</h3>
-            </div>
-            <div id="input-container"></div>
-            <div id="sign-up"></div>
+            
+                <div id="heading">
+                    <h3>This is not a real service. However, this is how a sign up form should look.</h3>
+                    <h3>Sign Up Now!</h3>
+                </div>
+                <div id="input-container">
+                    <form>
+                    <h3>Sign Up:</h3>
+                    <table>
+                        <tr>
+                            <td><label for="first-name">First Name:</label></td>
+                            <td><label for="last-name">Last Name:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input id="first-name" type="text"></td>
+                            <td><input id="last-name" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><label for="phone-number">Phone Number:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input id="email" type="email"></td>
+                            <td><input id="phone-number" type="tel" placeholder="123-456-7891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password:</label></td>
+                            <td><label for="confirm-password">Confirm Password:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input id="password" type="password"></td>
+                            <td><input id="confirm-password" type="password"></td>
+                        </tr>
+                    </table>
+                    <p id="error" style="color: red; font-size: 0.8rem; display:none;">Passwords do not match, please try again and submit.</p>
+                    <button id="submit" type="button">Sign Up</button>
+                    <button type="reset">Reset</button>
+                </form>
+                </div>
+                <div id="footer">
+                    
+                </div>
+            </form>
         </div>
     </div>
 </body>
-
+<script src="./script.js"></script>
 </html>
-
-
-<!-- Photo by <a href="https://unsplash.com/@purzlbaum?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Claudio Schwarz</a> on <a href="https://unsplash.com/photos/a-narrow-street-with-a-person-walking-down-it-n9A75XdfWCs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-   -->
